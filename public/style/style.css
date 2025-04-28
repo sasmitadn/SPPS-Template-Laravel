@@ -1,0 +1,226 @@
+
+
+:root {
+    --color-primary: hsl(210, 60%, 30%);   /* Deep Navy Blue */
+    --color-secondary: hsl(210, 20%, 50%); /* Cool Gray Blue */
+    --color-success: hsl(145, 50%, 40%);   /* Emerald Green */
+    --color-danger: hsl(0, 65%, 45%);       /* Soft Crimson */
+    --color-warning: hsl(40, 90%, 55%);     /* Warm Amber */
+    --color-info: hsl(200, 70%, 45%);       /* Aqua Cyan */
+    --color-light: hsl(0, 0%, 97%);          /* Almost White */
+    --color-dark: hsl(210, 30%, 15%);        /* Dark Indigo */
+
+    --color-white: #ffffff;
+    --color-black: #000000;
+}
+
+
+/* Rewrite button dan background */
+.btn-primary, .bg-primary {
+    background-color: var(--color-primary) !important;
+    border-color: var(--color-primary) !important;
+    color: var(--color-white) !important;
+}
+
+.btn-secondary, .bg-secondary {
+    background-color: var(--color-secondary) !important;
+    border-color: var(--color-secondary) !important;
+    color: var(--color-white) !important;
+}
+
+.btn-success, .bg-success {
+    background-color: var(--color-success) !important;
+    border-color: var(--color-success) !important;
+    color: var(--color-white) !important;
+}
+
+.btn-danger, .bg-danger {
+    background-color: var(--color-danger) !important;
+    border-color: var(--color-danger) !important;
+    color: var(--color-white) !important;
+}
+
+.btn-warning, .bg-warning {
+    background-color: var(--color-warning) !important;
+    border-color: var(--color-warning) !important;
+    color: var(--color-dark) !important;
+}
+
+.btn-info, .bg-info {
+    background-color: var(--color-info) !important;
+    border-color: var(--color-info) !important;
+    color: var(--color-white) !important;
+}
+
+.btn-light, .bg-light {
+    background-color: var(--color-light) !important;
+    border-color: var(--color-light) !important;
+    color: var(--color-dark) !important;
+}
+
+.btn-dark, .bg-dark {
+    background-color: var(--color-dark) !important;
+    border-color: var(--color-dark) !important;
+    color: var(--color-white) !important;
+}
+
+/* Outline Buttons */
+.btn-outline-primary {
+    color: var(--color-primary) !important;
+    border-color: var(--color-primary) !important;
+}
+.btn-outline-primary:hover, 
+.btn-outline-primary:focus, 
+.btn-outline-primary:active {
+    background-color: var(--color-primary) !important;
+    color: var(--color-white) !important;
+}
+
+/* Sama kayak di atas untuk semua warna lainnya */
+.btn-outline-secondary {
+    color: var(--color-secondary) !important;
+    border-color: var(--color-secondary) !important;
+}
+.btn-outline-secondary:hover,
+.btn-outline-secondary:focus,
+.btn-outline-secondary:active {
+    background-color: var(--color-secondary) !important;
+    color: var(--color-white) !important;
+}
+
+.btn-outline-success {
+    color: var(--color-success) !important;
+    border-color: var(--color-success) !important;
+}
+.btn-outline-success:hover,
+.btn-outline-success:focus,
+.btn-outline-success:active {
+    background-color: var(--color-success) !important;
+    color: var(--color-white) !important;
+}
+
+/* lanjut outline-danger, outline-warning, outline-info, outline-light, outline-dark sesuai pattern di atas */
+
+/* Button di Modal */
+.modal .btn-primary {
+    background-color: var(--color-primary) !important;
+    border-color: var(--color-primary) !important;
+    color: var(--color-white) !important;
+}
+
+.modal .btn-secondary {
+    background-color: var(--color-secondary) !important;
+    border-color: var(--color-secondary) !important;
+    color: var(--color-white) !important;
+}
+
+/* kalau ada modal-footer, juga bisa dikuatin */
+.modal-footer .btn-primary,
+.modal-footer .btn-secondary,
+.modal-footer .btn-success,
+.modal-footer .btn-danger,
+.modal-footer .btn-warning,
+.modal-footer .btn-info,
+.modal-footer .btn-light,
+.modal-footer .btn-dark {
+    /* optional: tambah hover effect */
+}
+
+
+
+
+
+
+
+
+body {
+    font-family: 'Poppins';
+    overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+    .content {
+        padding: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    .sidebar {
+        display: block;
+    }
+    .content {
+        margin-left: 250px;
+        padding: 30px;
+    }
+}
+
+.sidebar {
+    height: 100vh;
+    width: 250px;
+    position: fixed;
+    background-color: hsl(222, 66%, 22%);
+    padding-top: 20px;
+}
+.sidebar a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+}
+.active {
+    background-color: hsl(218, 41%, 15%);
+    border: 0px solid none;
+    border-radius: 10px;
+}
+.offcanvas {
+    background-color: hsl(222, 66%, 22%);
+    padding-top: 20px;
+    color: white;
+}
+.offcanvas a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+.status-success-1 {
+    display: inline-block;
+    padding: 4px 8px;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    background-color: #28a745;
+    border-radius: 5px;
+    text-align: center;
+    min-width: 60px;
+}
+
+.status-success {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.status-pending {
+    color: #ec7b11;
+    font-weight: bold;
+}
+
+.status-pending-1 {
+    display: inline-block;
+    padding: 4px 8px;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    background-color: #ecb211;
+    border-radius: 5px;
+    text-align: center;
+    min-width: 60px;
+}
